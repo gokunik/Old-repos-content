@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .popover {
+        margin: 25px;
+      }
+      .lyrics {
+        position: relative;
+        left: -70px;
+      }
+      .lyrics h5 {
+        font-size: 16px;
+      }
+
+      .center {
+        background-color: white;
+        box-shadow: 0px 0px 10px grey;
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        margin-top: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-1">
+      <div class="nav-div d-flex align-items-center flex-column">
+        <div class="logo d-flex align-items-center mb-3 px-2">
+          <img src="../images/vinyl-2241789_640.png" class="" alt="" />
+          <h2 class="sh text-danger font-weight-bold pl-2">
+            Music <span class="text-info">Portal</span>
+          </h2>
+        </div>
+        <ul class="nav nav-tabs align-items-center mb-3">
+          <li class="nav-item">
+            <a class="nav-link a" href="#">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="charts.html">Charts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active a" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="login.html">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container collapse" id="show">
+        <center>
+          <div class="center">
+            <h5 class="badge badge-info p-2 mt-3">Dance Monkey</h5>
+            <div
+              style="
+                height: 400px;
+                overflow: auto;
+                margin-top:10px;
+                padding: 0px 30px;
+                text-align: left;
+                line-break: strict;
+                line-height: 30px;
+              "
+            >
+              <pre style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">They say oh my god I see the way you shine
+Take your hand, my dear, and place them both in mine
+You know you stopped me dead while I was passing by
+And now I beg to see you dance just one more time
+Ooh I see you, see you, see you every time
+And oh my I, I, I like your style
+You, you make me, make me, make me wanna cry
+And now I beg to see you dance just one more time
+So they say
+Dance for me, dance for me, dance for me, oh, oh, oh
+I've never seen anybody do the things you do before
+They say move for me, move for me, move for me, ay, ay, ay
+And when you're done I'll make you do it all again
+I said oh my god I see you walking by
+Take my hands, my dear, and look me in my eyes
+Just like a monkey I've been dancing my whole life
+But you just beg to see me dance just one more time
+Ooh I see you, see you, see you every time
+And oh my I, I like your style
+You, you make me, make me, make me wanna cry
+And now I beg to see you dance just one more time
+So they say
+Dance for me, dance for me, dance for me, oh, oh, oh
+I've never seen anybody do the things you do before
+They say move for me, move for me, move for me, ay, ay, ay
+And when you're done I'll make you do it all again
+They say
+Dance for me, dance for me, dance for me, oh, oh, oh, oh, oh, oh, oh
+I've never seen anybody do the things you do before
+They say move for me, move for me, move for me, ay, ay, ay
+And when you're done I'll make you do it all again
+Ooh
+Woah-oh, woah-oh, oh
+Ooh
+Ah ah, ah
+They say
+Dance for me, dance for me, dance for me, oh, oh, oh
+I've never seen anybody do the things you do before
+They say move for me, move for me, move for me, ay, ay, ay
+And when you're done I'll make you do it all again
+They say
+Dance for me, dance for me, dance for me, oh, oh, oh, oh, oh, oh, oh
+I've never seen anybody do the things you do before
+They say move for me, move for me, move for me, ay, ay, ay
+And when you're done I'll make you do it all again
+All again
+              </pre>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="player d-flex align-items-center justify-content-around">
+        <div class="sec-1 d-flex align-items-center flex-fill">
+          <img
+            class="ml-5"
+            src="../images/girl.jpg"
+            style="block-size: 70px; border-radius: 5px"
+            data-toggle="popover"
+            title="Trending check"
+            data-content="#3 On trending"
+            data-trigger="hover"
+            data-placement="top"
+          />
+          <div class="m-3">
+            <h5 class="text-danger font-weight-bold">Dance Monkey</h5>
+            <p class="font-weight-bold badge badge-dark">Tones and I</p>
+          </div>
+        </div>
+
+        <div class="lyrics ml-n5">
+          <a href="#show" data-toggle="collapse"
+            ><h5 class="badge badge-info p-3">lyrics</h5></a
+          >
+        </div>
+
+        <div
+          class="sec-2 d-flex justify-content-center align-items-center flex-fill"
+        >
+          <div class="mx-2">
+            <button
+              class="btn btn-success"
+              data-toggle="tooltip"
+              title="Previous Song"
+            >
+              <i class="fa fa-backward fa-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="m-5">
+            <button
+              class="btn btn-danger"
+              data-toggle="tooltip"
+              title="Play Song "
+            >
+              <i class="fa fa-play fa-2x p-1" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="mx-2">
+            <button
+              class="btn btn-success"
+              data-toggle="tooltip"
+              title="Next Song"
+            >
+              <i class="fa fa-forward fa-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="sec-3 d-flex justify-content-center align-items-center flex-fill"
+        >
+          <div class="m-4">
+            <a href="" class="" data-toggle="tooltip" title="Volume"
+              ><i class="fa fa-volume-up fa-lg" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="m-4">
+            <a href="" data-toggle="tooltip" title="Shuffle Songs"
+              ><i class="fa fa-random fa-lg" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="m-4">
+            <a href="" data-toggle="tooltip" title="Add To favourite"
+              ><i class="fa fa-heart fa-lg text-danger" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>

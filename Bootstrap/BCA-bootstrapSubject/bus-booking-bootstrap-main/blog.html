@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.js"
+    ></script>
+
+
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900|Satisfy&display=swap");
+
+
+        .nav-div {
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 0px 10px grey;
+            padding-top: 12px;
+            transition: 0.5s;
+            z-index: 9;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: white;
+        }
+
+        .logo {
+            border-bottom: 6px solid #34495e;
+            border-radius: 15px;
+            padding: 0px;
+        }
+
+        .logo>h2 {
+            font-family: "Barlow Condensed";
+        }
+
+        .a {
+            font-size: 25px;
+            font-family: "satisfy";
+            font-weight: bolder;
+            color: black;
+        }
+
+        .a:hover {
+            color: #f368e0;
+        }
+
+        .jumbotron {
+            background-color: black;
+            margin: 0px;
+            color: white;
+            padding: 30px !important;
+        }
+        .footer {
+            background-color: #414141;
+            width: 100%;
+            text-align: left;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 50px;
+            margin-top: 50px;
+          }
+    
+          .footer .footer-left,
+          .footer .footer-center,
+          .footer .footer-right {
+            display: inline-block;
+            vertical-align: top;
+          }
+    
+          .footer .footer-left {
+            width: 33%;
+            padding-right: 15px;
+          }
+    
+          .footer .about {
+            line-height: 20px;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+          }
+    
+          .footer .about span {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+    
+          .footer .icons {
+            margin-top: 25px;
+          }
+    
+          .footer .icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+          }
+    
+          .footer .footer-center {
+            width: 30%;
+          }
+    
+          .footer .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+          }
+    
+          .footer .footer-center i.fa-envelope {
+            font-size: 17px;
+            line-height: 38px;
+          }
+    
+          .footer .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            vertical-align: middle;
+            margin: 0;
+          }
+    
+          .footer .footer-center p span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
+          }
+    
+          .footer .footer-center p a {
+            color: #0099ff;
+            text-decoration: none;
+          }
+    
+          .footer .footer-right {
+            width: 35%;
+          }
+    
+          .footer h2 {
+            color: #ffffff;
+            font-size: 36px;
+            font-weight: normal;
+            margin: 0;
+          }
+    
+          .footer h2 span {
+            color: #0099ff;
+          }
+    
+          .footer .menu {
+            color: #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+          }
+    
+          .footer .menu a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+          }
+    
+          .footer .menu a:hover {
+            color: #0099ff;
+          }
+    
+          .footer .name {
+            color: #0099ff;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+          }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" style="text-align: center;">
+            <h1>We are Hiring <span class="text-warning">!</span> </h1>
+            <p class="mb-1">We are looking for inspiring blog writters. <br> If you think you are the one contact us.
+            </p>
+            <a href="#" class="">mail@bus.com</a>
+        </div>
+    </div>
+
+
+    <div class="nav-div d-flex align-items-center justify-content-around">
+        <div
+          class="logo d-flex align-items-center justify-content-center mb-3 px-2"
+        >
+          <h2 class="text-danger pl-2">
+            Go <span class="text-dark">Bus</span>
+          </h2>
+        </div>
+        <ul class="nav align-items-center mb-3">
+          <li class="nav-item">
+            <a class="nav-link a" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="blog.html">blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              href=""
+              class="nav-link dropdown-toggle a"
+              data-toggle="dropdown"
+            >
+              Join
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="login.html">Login</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="login.html">Register</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <h1 class="my-4 text-warning">Blog Post's
+                    <small></small>
+                </h1>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/bus.4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-title">Top 5 luxury buses in the world</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                            aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi
+                            vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on april 1, 2019 by
+                        <a href="#">Gokunik </a>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/bus1.jfif" alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-title">Best places to visit in a bus trip </h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                            aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi
+                            vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2020 by
+                        <a href="#">Nitesh khatri</a>
+                    </div>
+                </div>
+
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/bus2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-title">Why bus travel is better then airways !</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                            aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi
+                            vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on January 1, 2019 by
+                        <a href="#">Gokunik</a>
+                    </div>
+                </div>
+
+
+                <ul class="pagination justify-content-center mb-4">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#">Newer </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"> Older Blogs &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+
+            <div class="col-md-4 mt-5 pt-4">
+
+
+                <div class="card my-4">
+                    <h5 class="card-header">Search</h5>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search blogs " id="search_blog">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card my-4">
+                    <h5 class="card-header">Categories</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#">Travel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Information</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Freebies</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#">Travel Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Travel tech</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tutorials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card my-4">
+                    <h5 class="card-header">Subscribe  </h5>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                        <button class="btn btn-info">Subscribe</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <footer class="footer">
+            <div class="footer-left col-md-4 col-sm-6">
+              <p class="about">
+                <span> About the company</span> Ut congue augue non tellus bibendum,
+                in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus
+                odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer
+                tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo.
+                Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue.
+                Nam ut nibh mollis, tristique ante sed, viverra massa.
+              </p>
+            </div>
+            <div class="footer-center col-md-4 col-sm-6">
+              <div class="p-2">
+                <i class="fa fa-map-marker"></i>
+                <p><span> broklyn </span>new york, USA</p>
+              </div>
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 1234567891</p>
+              </div>
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#"> office@gobus.com</a></p>
+              </div>
+            </div>
+            <div class="footer-right col-md-4 col-sm-6">
+              <h2>Go<span> Bus</span></h2>
+              <p class="menu">
+                <a href="#"> Home</a> | <a href="#"> About</a> |
+                <a href="#"> Services</a> | <a href="#"> Portfolio</a> |
+                <a href="#"> News</a> |
+                <a href="#"> Contact</a>
+              </p>
+              <p class="name">Go Bus &copy; 2016</p>
+            </div>
+          </footer>
+    </div>
+
+</body>
+
+</html>
+
+<script >
+  $(document).ready(function() {
+
+      var blogs = ['Travel Blogs','Travel Guide','Tech Info','Infotech Blog','Guide Blogs','Tutorial blogs','Travel safety'];
+  
+      $('#search_blog').typeahead({
+        source: blogs
+      });
+    });
+</script>
+<script>
+    $('.nav').affix({
+        offset:{
+            top: $('header').height() 
+        }
+    })
+</script>

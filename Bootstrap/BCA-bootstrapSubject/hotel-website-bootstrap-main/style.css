@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900|Satisfy&display=swap");
+
+*,
+p {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.section-1 {
+  height: 100vh;
+}
+
+.header-info {
+  background-color: #0e1c35;
+  height: 6vh;
+}
+
+.header-info p {
+  color: white;
+  padding-left: 10px;
+  font-family: "Barlow Condensed";
+}
+
+.navigation-bar {
+  box-shadow: 0px 0px 10px grey;
+  height: 10vh;
+  box-sizing: border-box;
+}
+
+.logo,
+.navbar {
+  flex-grow: 1;
+}
+
+.nav-item > a {
+  font-family: "Barlow Condensed";
+  margin-left: 20px;
+  color: #2f3542;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.nav-item > a:hover {
+  color: tomato;
+}
+
+.navbar-nav {
+  position: relative;
+  left: 60px;
+}
+
+.navigation-bar {
+  position: sticky;
+  top: 0;
+  z-index: 999 !important;
+  background-color: white;
+}
+
+.banner {
+  background-image: url("images/h1_hero.jpg");
+  height: 84vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.stylis-text h1 {
+  font-size: 100px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  color: #fde02f;
+  font-family: "Satisfy";
+  line-height: 1.3;
+  margin-bottom: 17px;
+}
+
+.stylis-text h1 span {
+  position: relative;
+}
+
+.stylis-text h1 span::before {
+  position: absolute;
+  content: "";
+  background-image: url("images/hero-_ineShape.png");
+  background-repeat: no-repeat;
+  height: 35%;
+  z-index: -1;
+  bottom: 8%;
+  left: -4%;
+  right: -2px;
+  background-size: 100%;
+}
+
+.stylis-text p {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 39px;
+  font-family: "Barlow Condensed";
+}
+
+.banner-center {
+  width: 70%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  width: 100%;
+  height: 7rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.form form {
+  height: 100%;
+}
+
+.search input {
+  width: 512px;
+  height: 3rem;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: satisfy;
+  font-weight: bolder;
+}
+
+.select input {
+  width: 352px;
+  height: 3rem;
+  padding: 0px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: satisfy;
+  font-weight: bolder;
+  color: grey;
+  outline: none;
+}
+
+.select select option {
+  margin: 10px;
+}
+
+.btn {
+  padding: 11px 50px;
+}
+
+.section-2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-shadow: 0px 0px 30px 2px grey;
+}
+
+.section3 {
+ height: 110vh;
+  width: 100%;
+}
+
+.section-heading {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 3rem;
+}
+
+.room-cardd {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  top: 7rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.room-cardd .cardd {
+  width: 370px;
+  height: 505px;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px grey;
+  transition: 0.5s;
+}
+
+.cardd:hover {
+  box-shadow: 0px 0px 30px grey;
+  transform: scale(1.02);
+}
+
+.cardd-image img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.cardd .info {
+  width: 100%;
+  margin: 20px;
+}
+
+.cardd .cardd-info {
+  width: 100%;
+  padding: 12px;
+}
+
+.room-name {
+  font-family: "Barlow Condensed";
+}
+
+.section-heading p {
+  font-size: 25px;
+  font-family: "satisfy";
+}
+
+.section-heading h4 {
+  font-size: 40px;
+  font-family: "Barlow Condensed";
+}
+
+.line {
+  margin: 0px;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.social-section .si a i:hover {
+  transform: scale(1.05);
+}
+
+
+.label
+{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Barlow Condensed";
+    color: tomato;
+}
+
+.tab tr td{
+    padding: 10px 0px;
+}
+
+.input
+{
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px 1px lightgrey;
+    border-radius: 5px;
+    transition: .1s;
+    padding: 2px 10px;
+}
+
+.input:hover
+{
+    box-shadow: 0px 0px 3px 0px grey;
+    transform: scale(1.02);
+}
+
+.container-fluid
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    
+}
+.box.search{
+  box-shadow: 0px 0px 10px 10px;
+}
+

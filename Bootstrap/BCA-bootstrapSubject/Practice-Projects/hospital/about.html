@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+       /* CTA CSS */
+ .cta-padding35 {
+    padding: 35px 0 35px;
+    background-color: #b40028;
+    color:#fff;
+}
+
+.paddingTB60 {
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+   .image-aboutus-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/673649/pexels-photo-673649.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom:110px;
+ }
+ 
+  .image-aboutus-sm-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/631008/pexels-photo-631008.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+
+    padding-bottom:30px;
+ }
+.lg-text {
+    font-size:52px;
+    font-weight: 600;
+    text-transform: none;
+    color:#fff;
+}
+.image-aboutus-para {
+    color:#fff;
+}
+
+
+
+body {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-style: normal;
+    color: #494949;
+    font-size: 16px;
+}
+
+
+h1 {
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+
+
+/* Breadcum bar */
+.bread-bar {
+    background: #f9f9f9;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    min-height: 40px;
+    height: auto;
+    position: relative;
+    z-index: 555;
+}
+.breadcrumb {
+    background: none;
+    margin: 0;
+    font-weight: 300;
+    padding-left: 0;
+    font-size: 13px;
+}
+.breadcrumb a {
+ 
+    font-weight: bold;
+}
+.breadcrumb > .active {
+    color: tomato;
+}
+.breadcrumb > li + li::before {
+    content: "\203A";
+    color: #999;
+    padding: 0 8px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div
+    class="header-container container-fluid d-flex align-items-center "
+  >
+    <div
+      class="logo d-flex flex-fill align-items-center justify-content-center"
+    >
+      <img src="../images/heart.png" alt="Website-logo" />
+      <h5 class="text-danger">
+        Heart <span class="text-warning">Care</span>
+      </h5>
+    </div>
+    <div class="menu d-flex align-items-center py-1">
+      <nav class="navbar navbar-expand">
+        <ul class="navbar-nav nav-pills">
+          <li class="nav-item">
+            <a href="hospital.html" class="nav-link "> Home </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              Services
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Full Body Check up</a>
+              <a class="dropdown-item" href="#">Emergency Services</a>
+              <a class="dropdown-item" href="#">Online Doctor Visit</a>
+              <a class="dropdown-item" href="#">Find near by Hospital</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> contact </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link  active"> About </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search py-2">
+        <form class="form-inline" action="">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search Doctors"
+          />
+          <button class="btn btn-outline-primary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="image-aboutus-banner">
+    <div class="container">
+     <div class="row">
+         <div class="col-md-12">
+          <h1 class="lg-text">About Us</h1>
+          <p class="image-aboutus-para"></p>
+        </div>
+     </div>
+ </div>
+ </div>
+ <div class="bread-bar">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-8 col-sm-6 col-xs-8">
+                     <ol class="breadcrumb">
+                         <li><a href="hospital.html">Home</a></li>
+                         <li class="active">About Us</li>
+                     </ol>
+                 </div>
+                 <div class="col-md-4 col-sm-6 col-xs-4">
+                 </div>
+             </div>
+           </div>
+     </div>
+ <div class="aboutus-secktion paddingTB60">
+     <div class="container">
+         <div class="row">
+                     <div class="col-md-6">
+                         <h1 class="strong">Who we are and<br>what we do</h1>
+                         <p class="lead">Best hospital chain <br>in the world </p>
+                     </div>
+                     <div class="col-md-6">
+                         <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, 
+                             diagnostics and day care specialty facilities. Currently, the company operates its healthcare delivery services in India, Nepal, 
+                             Dubai and Sri Lanka with 36 healthcare facilities (including projects under development), approximately 4,000 operational beds and over 415 diagnostics centres.</p>
+                      <h5 class="text-danger">
+                        AWARDS & ACCOLADES
+                      </h5>
+                      <p>Economic Times Healthworld Hospital Awards’20
+                        Fortis Group won four awards in various categories at the Economic Times Healthworld Hospital Awards’20.
+                        Fortis won the ‘Best Hospital Chain’ and the ‘Best Hospital for Patient Care’ titles nationally.
+                        Fortis Hospital, Bannerghatta Road, Bengaluru, was named the ‘Best Hospital - Urology’ in its region.
+                        Fortis Memorial Research Institute, Gurugram, was recognised as the ‘Best Hospital - Oncology’ in its region.</p>
+                    </div>
+ </div>
+     </div>
+ </div>
+
+
+ <div>
+    <footer style="background-color: #2c292f">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left">
+            <div class="py-0">
+              <h3 class="my-4 text-danger">
+                Heart<span class="mx-2 font-italic text-warning">Care</span>
+              </h3>
+
+              <p class="footer-links font-weight-bold">
+                <a class="text-white p-1" href="#">Home</a>
+                <a class="text-white p-1" href="#">Blog</a>
+                <a class="text-white p-1" href="#">About</a>
+                <a class="text-white p-1" href="#">Contact</a>
+              </p>
+              <p class="text-light py-4 mb-4">
+                &copy;2020 Heart care health Solutions Pvt. Ltd.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-white text-center text-md-left">
+            <div class="py-2 my-4">
+              <div>
+                <p class="text-white">
+                  <i class="fa fa-map-marker mx-2"></i> 121 King Street,
+                  Melbourne Victoria 3000 Australia
+                </p>
+              </div>
+
+              <div>
+                <p><i class="fa fa-phone mx-2"></i> +91 1234567891</p>
+              </div>
+              <div>
+                <p>
+                  <i class="fa fa-envelope mx-2"></i
+                  ><a href="#">support@heartcare.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-white my-4 text-center text-md-left">
+            <span class="font-weight-bold">About the Company</span>
+            <p class="text-warning my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              fuga animi iste doloribus a sequi, sunt temporibus vitae commodi
+              deleniti voluptas at exercitationem eaque.
+            </p>
+            <div class="py-2">
+              <a href="#"
+                ><i class="fab fa-facebook fa-2x text-primary mx-3"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-google-plus fa-2x text-danger mx-3"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-twitter fa-2x text-info mx-3"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-youtube fa-2x text-danger mx-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>

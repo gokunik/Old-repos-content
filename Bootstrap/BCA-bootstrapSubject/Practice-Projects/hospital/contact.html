@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div
+    class="header-container container-fluid d-flex align-items-center .fixed-top"
+  >
+    <div
+      class="logo d-flex flex-fill align-items-center justify-content-center"
+    >
+      <img src="../images/heart.png" alt="Website-logo" />
+      <h5 class="text-danger">
+        Heart <span class="text-warning">Care</span>
+      </h5>
+    </div>
+    <div class="menu d-flex align-items-center py-1">
+      <nav class="navbar navbar-expand">
+        <ul class="navbar-nav nav-pills">
+          <li class="nav-item">
+            <a href="hospital.html" class="nav-link "> Home </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              Services
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Full Body Check up</a>
+              <a class="dropdown-item" href="#">Emergency Services</a>
+              <a class="dropdown-item" href="#">Online Doctor Visit</a>
+              <a class="dropdown-item" href="#">Find near by Hospital</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active"> contact </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search py-2">
+        <form class="form-inline" action="">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search Doctors"
+          />
+          <button class="btn btn-outline-primary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container contact-form">
+    <div class="contact-image">
+        <img src="../images/heart.png" alt="rocket_contact"/>
+    </div>
+    <form method="post">
+        <h3>Drop Us a Message</h3>
+       <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<center>
+    <div class="pop d-flex justify-content-around align-items-center ">
+        <div>
+            <button class="btn btn-outline-success " 
+            data-trigger="hover" title="Address" data-toggle="popover" data-placement="left" data-content=" hamilton street new york">
+            <i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+        </div>
+
+        <div>
+            <button class="btn btn-outline-success "
+            data-trigger="hover" title="Mobile" data-toggle="popover" data-placement="top" data-content=" +1 10235675432">
+            <i class="fa fa-phone-square" aria-hidden="true"></i></button>
+        </div>
+        <div>
+            <button class="btn btn-outline-success "
+            data-trigger="hover" title="Email" data-toggle="popover" data-placement="right" data-content=" support@heartcare.com"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</center>
+
+<div class="container mt-4 mb-5">
+    <center>
+        <ul class="breadcrumb justify-content-center w-50">
+            <li class="breadcrumb-item"><a href="hospital.html">Home</a></li>
+            <li class="breadcrumb-item active"><a href="contact.html">Contact</a></li>
+            
+          </ul>
+    </center>
+</div>
+
+<div>
+    <footer style="background-color: #2c292f">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left">
+            <div class="py-0">
+              <h3 class="my-4 text-danger">
+                Heart<span class="mx-2 font-italic text-warning">Care</span>
+              </h3>
+
+              <p class="footer-links font-weight-bold">
+                <a class="text-white p-1" href="#">Home</a>
+                <a class="text-white p-1" href="#">Blog</a>
+                <a class="text-white p-1" href="#">About</a>
+                <a class="text-white p-1" href="#">Contact</a>
+              </p>
+              <p class="text-light py-4 mb-4">
+                &copy;2020 Heart care health Solutions Pvt. Ltd.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-white text-center text-md-left">
+            <div class="py-2 my-4">
+              <div>
+                <p class="text-white">
+                  <i class="fa fa-map-marker mx-2"></i> 121 King Street,
+                  Melbourne Victoria 3000 Australia
+                </p>
+              </div>
+
+              <div>
+                <p><i class="fa fa-phone mx-2"></i> +91 1234567891</p>
+              </div>
+              <div>
+                <p>
+                  <i class="fa fa-envelope mx-2"></i
+                  ><a href="#">support@heartcare.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-white my-4 text-center text-md-left">
+            <span class="font-weight-bold">About the Company</span>
+            <p class="text-warning my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              fuga animi iste doloribus a sequi, sunt temporibus vitae commodi
+              deleniti voluptas at exercitationem eaque.
+            </p>
+            <div class="py-2">
+              <a href="#"
+                ><i class="fab fa-facebook fa-2x text-primary mx-3"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-google-plus fa-2x text-danger mx-3"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-twitter fa-2x text-info mx-3"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-youtube fa-2x text-danger mx-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  </body>
+</html>
+
+<script>
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+    </script>

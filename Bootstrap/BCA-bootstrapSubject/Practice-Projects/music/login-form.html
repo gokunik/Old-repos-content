@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="form002.css" />
+  </head>
+
+  <body>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="music.html" target="_parent">Home</a></li>
+        <li class="breadcrumb-item active">Login</li>
+      </ul>
+      
+    <div class="parent-cont">
+      <div class="child-cont">
+        <div class="heading">
+          <h1>Sign in With</h1>
+        </div>
+
+        <div class="image-cont">
+          <div class="img-cont" data-toggle="modal" data-target="#myModal">
+            <span class="img-text">Facebook</span>
+            <img src="../images/facebook.png" class="img" />
+          </div>
+
+          <div class="img-cont">
+            <span class="img-text">Google</span>
+            <img src="../images/google.png" class="img" />
+          </div>
+        </div>
+
+        <div class="form-cont">
+          <form class="form">
+            <div class="input">
+              <p>Username</p>
+              <input
+                type="text"
+                placeholder="username"
+                name="username"
+                title="Enter username"
+              />
+            </div>
+
+            <div class="input">
+              <p>Password</p>
+              <input
+                type="password"
+                placeholder="Password"
+                name="username"
+                title="Enter password"
+              />
+            </div>
+
+            <div class="login-btn">
+              <input type="submit" value=" Login In " />
+            </div>
+          </form>
+        </div>
+
+        <div class="forget-pass">
+          <a href="#">Forget password ?</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Login with Facebook</h4>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-sign-in" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <center>
+              <img
+                src="../images/facebook.png"
+                alt=""
+                style="block-size: 100px"
+              />
+            </center>
+            <div class="mt-3" name="login_form ">
+              <p class="input">
+                <input type="text" class="span3" placeholder="Email" />
+              </p>
+              <p class="input">
+                <input type="password" class="span3" placeholder="Password" />
+              </p>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+              onclick="show()"
+
+            >
+              Log In
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container w-25 mt-5 pt-3 show" id="show">
+        <div class="alert alert-success">
+            <button type="button" class="close" onclick="hide()">&times;</button>
+            <strong> login Successful !</strong> 
+          </div>
+       </div>
+  </body>
+</html>
+
+<script>
+
+    function show()
+    {
+        document.getElementById('show').style.visibility = 'visible';
+    }
+    function hide()
+    {
+        document.getElementById('show').style.visibility = 'hidden';
+    }
+
+</script>

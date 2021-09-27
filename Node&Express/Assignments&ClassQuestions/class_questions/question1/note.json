@@ -1,0 +1,12 @@
+[
+    {
+        "id": 0,
+        "title": "First Note",
+        "body": "This is just a demo note"
+    },
+    {
+        "id": 1,
+        "title": "Ca2",
+        "body": "Adding and list commands"
+    }
+]

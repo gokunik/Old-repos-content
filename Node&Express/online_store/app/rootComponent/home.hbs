@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerInlcudes}}
+</head>
+
+<body>
+    {{>header}}
+    <div class="container mt-4"> Admin: <span class="text-danger">{{admin}}</span></div>
+    <div class="container mt-5 p-0 d-flex flex-wrap  card-container">
+        <div class="container text-info font-weight-bold ">Panel Info</div>
+        <div class="card">
+            <div class="card-header">Sales</div>
+            <div class="card-body">
+                <table class="table mb-0 table-striped table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Managed By</th>
+                            <th>
+                                About
+                            </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                {{users.sales.Managed}}
+                            </td>
+                            <td>
+                                {{users.sales.about}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Bill</div>
+            <div class="card-body">
+                <table class="table mb-0 table-striped table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Managed By</th>
+                            <th>
+                                About
+                            </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                {{users.bill.Managed}}
+                            </td>
+                            <td>
+                                {{users.bill.about}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Delivery</div>
+            <div class="card-body">
+                <table class="table mb-0 table-striped table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Managed By</th>
+                            <th>
+                                About
+                            </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                {{users.delivery.Managed}}
+                            </td>
+                            <td>
+                                {{users.delivery.about}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Return</div>
+            <div class="card-body">
+                <table class="table mb-0 table-striped table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Managed By</th>
+                            <th>
+                                About
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                {{users.return.Managed}}
+                            </td>
+                            <td>
+                                {{users.return.about}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                Assign Task
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                            Select user
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Nitesh Khatri</a>
+                            <a class="dropdown-item" href="#">Deepak Khatri</a>
+                            <a class="dropdown-item" href="#">Monmohan Singh</a>
+                            <a class="dropdown-item" href="#">Raman Singh</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Message">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-danger">Assign</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>

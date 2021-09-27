@@ -1,0 +1,17 @@
+{
+  "name": "online_store",
+  "version": "1.0.0",
+  "description": "Create an express application for a store which has hbs templates named sale, delivery, bill and return. Add minimum 5 relevant data elements and show them using a partial",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Nitesh Khatri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  }
+}

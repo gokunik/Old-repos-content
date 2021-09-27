@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main_card {
+  color: #fff;
+  width: 710px;
+  height: 390px;
+  margin: 50px 15px ;
+  display: flex;
+  max-width: 770px;
+  background: #00c9ff;
+  background: linear-gradient(to right, #92fe9d, #00c9ff);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.card_datails {
+  width: 100%;
+  padding: 25px ;
+}
+.card_datails h1 {
+  font-size: 30px;
+  
+}
+.card_right img {
+  height: 390px;
+  border-radius: 2px;
+}
+.card_right {
+  border-radius: 2px;
+}
+
+.card_cat {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.PG,
+.year,
+.genre,
+.time {
+  color: fff;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.PG {
+  background: #92fe9d;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  transition: 300ms ease-in-out;
+}
+
+.disc {
+  font-weight: 500;
+  line-height: 27px;
+}
+a.more {
+  color: darkcyan;
+  display: block;
+  text-decoration: none;
+}
+
+.social-btnn {
+  margin-left: -15px;
+}
+
+.social-btnn button {
+  color: #fff;
+  border: none;
+  padding: 15px;
+  outline: none;
+  height: 47px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-left: 10px;
+  background: #92fe9d;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: 200ms ease-in-out;
+}
+.social-btnn button:hover {
+  transform: scale(1.1);
+}
+
+.social-btnn a
+{
+  text-decoration: none;
+}

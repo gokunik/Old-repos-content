@@ -1,0 +1,70 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=New+Tegomin&family=Noto+Sans+JP&family=Roboto:ital,wght@1,300&display=swap');
+
+/* Usage */
+/* 
+font-family: 'Kiwi Maru', serif;
+font-family: 'New Tegomin', serif;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Noto Sans JP', sans-serif;
+*/
+
+body
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;   
+} 
+
+.card-header
+{
+    font-family: 'New Tegomin', serif;
+    font-weight: bold;
+}
+
+.card-body
+{
+    font-family: 'New Tegomin', serif; 
+    font-weight: bold;
+    font-style: normal;
+    
+}
+.header
+{
+    font-family: 'Kiwi Maru', serif;
+    
+}
+
+.card-container
+{
+  gap: 20px;
+}
+
+.card-container .card 
+{
+    margin: auto;
+}
+
+.card-container .card-body
+{
+    padding: 0px !important;
+}
+
+.card-container .thead-dark
+{
+    font-size: 12px;
+}
+
+.table
+{
+    text-align: center;
+    font-size: 12px;
+}
+
+.foot
+{
+    
+    margin-top: auto;
+    letter-spacing: 2px;
+}

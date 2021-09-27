@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: whitesmoke;
+  }
+
+  .section-services {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+    background-color: whitesmoke;
+    color: #fff;
+  }
+
+  .section-services .header-section {
+    margin-bottom: 35px;
+  }
+
+  .section-services .header-section .title {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #24252a;
+  }
+
+  .section-services .header-section .title:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 1px;
+    background-color: #f70037;
+  }
+
+  .section-services .header-section .title:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 3px;
+    background-color: #f70037;
+  }
+
+  .section-services .header-section .title span {
+    color: #f70037;
+  }
+
+  .section-services .header-section .description {
+    color: #6f6f71;
+  }
+
+  .section-services .single-service {
+    margin-top: 40px;
+    background-color: #24252a;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+  }
+
+  .section-services .single-service .part-1 {
+    padding: 40px 40px 25px;
+    border-bottom: 2px solid #1d1e23;
+  }
+
+  .section-services .single-service .part-1 i {
+    margin-bottom: 25px;
+    font-size: 50px;
+    color: whitesmoke;
+  }
+
+  .section-services .single-service .part-1 .title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.8em;
+  }
+
+  .section-services .single-service .part-2 {
+    padding: 30px 40px 40px;
+  }
+
+  .section-services .single-service .part-2 .description {
+    margin-bottom: 22px;
+    color: #6f6f71;
+    font-size: 14px;
+    line-height: 1.8em;
+  }
+
+  .section-services .single-service .part-2 a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .section-services .single-service .part-2 a i {
+    margin-right: 10px;
+    color: #f70037;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 679px;
+  }
+
+  .carousel-inner {
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 5px;
+  }
+
+  .table {
+    box-shadow: 0px 0px 10px rgba(192, 192, 192, 0.6),
+      0px 0px 50px rgba(192, 192, 192, 0.4);
+    max-height: 1000px;
+    
+  }
+</style>
+
+<body>
+  <div class="nav-div d-flex align-items-center justify-content-around">
+    <div class="logo d-flex align-items-center justify-content-center mb-3 px-2">
+      <h2 class="text-danger pl-2">
+        Go <span class="text-dark">Bus</span>
+      </h2>
+    </div>
+    <ul class="nav align-items-center mb-3">
+      <li class="nav-item">
+        <a class="nav-link a" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link a" href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link a" href="about.html">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link a" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link a" href="blog.html">blog</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a href="" class="nav-link dropdown-toggle a" data-toggle="dropdown">
+          Join
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="login.html">Login</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="login.html">Register</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div id="demo" class="carousel slide" data-ride="carousel" style="padding-top: 80.8px !important;">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/gerson-cano-W9gphcM5U20-unsplash.jpg">
+        <div class="carousel-caption">
+          <h3>Travel the beaches </h3>
+          <p>We provide you the opporunity to travel the worlds best beaches</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/pexels-pixabay-258154 (1).jpg">
+        <div class="carousel-caption">
+          <h3>Stay In the best</h3>
+          <p>We arrange your stay in some of the best hotel in the world</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/sabbir-ahmed-AvGCGMMu9XU-unsplash.jpg">
+        <div class="carousel-caption">
+          <h3>Your Travel Partner</h3>
+          <p>We would like to become your travel partner to begin our new journey together</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <section class="section-services">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="header-section">
+            <h2 class="title">Exclusive <span>Services</span></h2>
+            <p class="description">We present you all the best serices we have to serve you at our best. we hope you are
+              satisfied with us</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="part-1">
+              <i class="fab fa-500px"></i>
+              <h3 class="title">Express service delivery with convenient </h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut in alias quo quidem
+                perferendis laborum quaerat ut magni? Facere delectus </p>
+              <a href="#"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="part-1">
+              <i class="fab fa-angellist"></i>
+              <h3 class="title">Always available through online chat</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut in alias quo quidem
+                perferendis laborum quaerat ut magni? Facere delectus </p> <a href="#"><i
+                  class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="part-1">
+              <i class="fas fa-award"></i>
+              <h3 class="title">Best Packages with best services</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut in alias quo quidem
+                perferendis laborum quaerat ut magni? Facere delectus </p> <a href="#"><i
+                  class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="part-1">
+              <i class="fab fa-asymmetrik"></i>
+              <h3 class="title">Best customer services in the market</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut in alias quo quidem
+                perferendis laborum quaerat ut magni? Facere delectus </p> <a href="#"><i
+                  class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="part-1">
+              <i class="fas fa-broadcast-tower"></i>
+              <h3 class="title">Provide solutions and services to end users</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut in alias quo quidem
+                perferendis laborum quaerat ut magni? Facere delectus </p> <a href="#"><i
+                  class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="single-service">
+            <div class="part-1">
+              <i class="fab fa-canadian-maple-leaf"></i>
+              <h3 class="title">Money back guarantee with no question asked</h3>
+            </div>
+            <div class="part-2">
+              <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut in alias quo quidem
+                perferendis laborum quaerat ut magni? Facere delectus </p> <a href="#"><i
+                  class="fas fa-arrow-circle-right"></i>Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="bookings container  px-3 pb-4">
+
+    <div class="section-services">
+      <div class="header-section mb-3" style="text-align: center;">
+        <h2 class="title">Exclusive <span>Packages</span></h2>
+        <p class="description">We present you all the best Packages we have, to serve you at our best. we hope you are satisfied with us</p>
+      </div>
+    </div>
+
+    <table class="table table-hover">
+      <colgroup>
+        <col style="width: 16.66666%" />
+        <col style="width: 16.66666%" />
+        <col style="width: 16.66666%" />
+        <col style="width: 16.66666%" />
+        <col style="width: 16.66666%" />
+        <col style="width: 16.66666%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>S no.</th>
+          <th>Package Name</th>
+          <th>Seat type</th>
+          <th>Bus Type</th>
+          <th>Total Duration</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Weekend Package</td>
+
+          <td>Normal Seating</td>
+
+          <td>Single deck - Tata</td>
+          <td>2 days - 2 nights</td>
+          <td>5,000</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Budget package</td>
+
+          <td>Sleeper and seating</td>
+
+          <td>single deck - Tata</td>
+          <td>1 week ~ 2 week</td>
+          <td>20,000</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Long Tour Pack</td>
+
+          <td>Sleeper personal cabinet</td>
+
+          <td> Volvo</td>
+          <td>2 weeks</td>
+          <td>50,000</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>Delux Travel Pack</td>
+
+          <td>Luxury personal cabinet</td>
+
+          <td>BMW </td>
+          <td>To be decided on purchase</td>
+          <td>75,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+      <p class="about">
+        <span> About the company</span> Ut congue augue non tellus bibendum,
+        in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus
+        odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer
+        tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo.
+        Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue.
+        Nam ut nibh mollis, tristique ante sed, viverra massa.
+      </p>
+    </div>
+    <div class="footer-center col-md-4 col-sm-6">
+      <div class="p-2">
+        <i class="fa fa-map-marker"></i>
+        <p><span> broklyn </span>new york, USA</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 1234567891</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#"> office@gobus.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right col-md-4 col-sm-6">
+      <h2>Go<span> Bus</span></h2>
+      <p class="menu">
+        <a href="#"> Home</a> | <a href="#"> About</a> |
+        <a href="#"> Services</a> | <a href="#"> Portfolio</a> |
+        <a href="#"> News</a> |
+        <a href="#"> Contact</a>
+      </p>
+      <p class="name">Go Bus &copy; 2016</p>
+    </div>
+  </footer>
+</body>
+
+</html>

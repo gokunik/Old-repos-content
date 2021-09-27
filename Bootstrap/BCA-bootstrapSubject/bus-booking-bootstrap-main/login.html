@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        background-color: #e2e2e2;
+      }
+
+      .nav-div {
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 10px grey;
+        padding-top: 12px;
+        transition: 0.5s;
+        z-index: 9;
+        position: static !important;
+        width: 100%;
+        background-color: white;
+      }
+
+      .logo {
+        border-bottom: 6px solid #34495e;
+        border-radius: 15px;
+        padding: 0px;
+      }
+
+      .logo > h2 {
+        font-family: "Barlow Condensed";
+      }
+
+      .a {
+        font-size: 25px;
+        font-family: "satisfy";
+        font-weight: bolder;
+        color: black;
+      }
+
+      .a:hover {
+        color: #f368e0;
+      }
+      .btn-facebook {
+        background-color: #395694 !important;
+        border-color: #395694 !important;
+      }
+
+      .btn-twitter {
+        background-color: #1c9ceb !important;
+        border-color: #1c9ceb !important;
+      }
+
+      .btn-google-plus {
+        background-color: #d64937 !important;
+        border-color: #d64937 !important;
+      }
+
+      .log-div {
+        margin-top: 0px;
+      }
+
+      .card {
+        transition: 0.4s !important;
+      }
+      .card:hover {
+        transform: scale(1.02) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-div d-flex align-items-center justify-content-around">
+        <div
+          class="logo d-flex align-items-center justify-content-center mb-3 px-2"
+        >
+          <h2 class="text-danger pl-2">
+            Go <span class="text-dark">Bus</span>
+          </h2>
+        </div>
+        <ul class="nav align-items-center mb-3">
+          <li class="nav-item">
+            <a class="nav-link a" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="blog.html">blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              href=""
+              class="nav-link dropdown-toggle a"
+              data-toggle="dropdown"
+            >
+              Join
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="login.html">Login</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="login.html">Register</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <div class="container h-100 log-div">
+      <div class="row h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5 m-auto">
+          <div
+            class="w-100 h-100 d-flex justify-content-center align-items-center"
+          >
+            <div class="card my-3 w-100 shadow example-card" id="example-card">
+              <div class="card-header bg-dark">
+                <ul
+                  class="nav nav-pills card-header-pills"
+                  id="example-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      id="example-login-tab"
+                      data-toggle="tab"
+                      href="#login"
+                      role="tab"
+                      aria-controls="example-login"
+                      aria-selected="true"
+                      ><i class="fa fa-lock"></i> Sign In</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="example-register-tab"
+                      data-toggle="tab"
+                      href="#register"
+                      role="tab"
+                      aria-controls="example-register"
+                      aria-selected="false"
+                      ><i class="fa fa-user-plus"></i> Create an account</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content" id="example-tab-content">
+                  <div
+                    class="tab-pane show fade active"
+                    id="login"
+                    role="tabpanel"
+                    aria-labelledby="example-login-tab"
+                  >
+                    <form>
+                      <div class="form-group text-center">
+                        <h3>Login Go Bus</h3>
+                        <p>Please enter your login information below</p>
+                      </div>
+                      <div class="form-group">
+                        <label for="login_email"
+                          ><i class="fa fa-user"></i> Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="login_email"
+                          placeholder="Enter Name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="login_password"
+                          ><i class="fa fa-lock"></i> Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="login_password"
+                          placeholder="Enter password"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <p><a href="#">Trouble signing in?</a></p>
+                      </div>
+                      <div class="form-group">
+                        <button type="button" class="btn btn-primary btn-block">
+                          Sign in
+                        </button>
+                      </div>
+                      <div class="form-group text-center">
+                        <p><small>Or sign in with</small></p>
+                      </div>
+                      <div class="form-group">
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-block btn-facebook"
+                        >
+                          <i
+                            class="fa fa-facebook-official"
+                            aria-hidden="true"
+                          ></i>
+                          Facebook
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-block btn-twitter"
+                        >
+                          <i class="fa fa-twitter"></i> Twitter
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-block btn-google-plus"
+                        >
+                          <i class="fa fa-google-plus"></i> Google Plus
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane fade nav-rotate"
+                    id="register"
+                    role="tabpanel"
+                    aria-labelledby="example-register-tab"
+                  >
+                    <form>
+                      <div class="form-group text-center">
+                        <h3>Register Go Bus</h3>
+                        <p>Enter the information below to create an account</p>
+                      </div>
+                      <div class="form-group">
+                        <label for="register_email"
+                          ><i class="fa fa-user"></i> Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="register_email"
+                          placeholder="Email address"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="register_password"
+                          ><i class="fa fa-lock"></i> Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="register_password"
+                          placeholder="Choice password"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="register_confirm_password"
+                          ><i class="fa fa-lock"></i> Confirm password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="register_confirm_password"
+                          placeholder="Re-enter your password to make sure"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <p><a href="#">Terms and conditions</a></p>
+                      </div>
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="register_eula"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="register_eula"
+                            >Yes, I agree with the terms and conditions</label
+                          >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="button" class="btn btn-primary btn-block">
+                          Create my account
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-left col-md-4 col-sm-6">
+        <p class="about">
+          <span> About the company</span> Ut congue augue non tellus bibendum,
+          in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus
+          odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer
+          tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo.
+          Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue.
+          Nam ut nibh mollis, tristique ante sed, viverra massa.
+        </p>
+      </div>
+      <div class="footer-center col-md-4 col-sm-6">
+        <div class="p-2">
+          <i class="fa fa-map-marker"></i>
+          <p><span> broklyn </span>new york, USA</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 1234567891</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="#"> office@gobus.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right col-md-4 col-sm-6">
+        <h2>Go<span> Bus</span></h2>
+        <p class="menu">
+          <a href="#"> Home</a> | <a href="#"> About</a> |
+          <a href="#"> Services</a> | <a href="#"> Portfolio</a> |
+          <a href="#"> News</a> |
+          <a href="#"> Contact</a>
+        </p>
+        <p class="name">Go Bus &copy; 2016</p>
+      </div>
+    </footer>
+  </body>
+</html>

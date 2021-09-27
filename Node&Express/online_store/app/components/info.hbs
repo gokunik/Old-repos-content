@@ -1,0 +1,38 @@
+<div class="container info">
+    <div class="card my-4">
+        <div class="card-header text-white bg-info">
+           Weekly Announcements
+        </div>
+        <div class="card-body p-0">
+            {{!-- for printing the array in hbs file i have refered to the hanlebar documentation --}}
+            <ul class="list-group">
+                {{#each announ}}
+                <li class="list-group-item list-group-item-action">{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mt-4 ">
+        <div class="card-header text-white bg-danger">
+            Your Current Task
+        </div>
+        <div class="card-body">
+            {{task}}
+        </div>
+    </div>
+
+    <div class="card my-4 ">
+        <div class="card-header text-white bg-success">
+            Your Weekly Report
+        </div>
+        <div class="card-body bg-light p-0">
+            <ul class="list-group list-group-horizontal ">
+                <li class="list-group-item">Task Completed: <span class="badge badge-primary">{{weekly.completed}}</span></li>
+                <li class="list-group-item">Pending Task: <span class="badge badge-danger">{{weekly.pending}}</span></li>
+                <li class="list-group-item">Overtime: <span class="badge badge-warning p-1">{{weekly.overtime}}</span>  </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>

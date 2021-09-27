@@ -1,0 +1,88 @@
+
+<header id="mainHeader">
+
+    <div id="infoHeader" class="d-flex flex-wrap justify-content-between p-3 align-items-center bg-dark">
+
+        <div class="infoSec1 px-1 d-flex flex-wrap">
+            <div>
+                <i class="fa fa-github flex-fill"></i>
+                <a class="text-white" href="https://github.com/trulyhuman">Github</a>
+            </div>
+            <div>
+                <i class="fa fa-envelope flex-fill"></i>
+                <a class="text-white" href="mailto:{{email}}"> {{email}}</a>
+            </div>
+        </div>
+
+        <div class="infoSec2 px-2 flex-fill d-flex flex-wrap">
+            <div class="btn-group d-flex">
+                <button type="button" id="loginBtn" class="btn btn-info" data-toggle="modal" data-target="#loginModal">
+                    Login
+                </button>
+
+                <button type="button" id="registerBtn" class="btn btn-info" data-toggle="modal"
+                    data-target="#registerModal">
+                    Register
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navigation-wrap bg-light start-header" id="header">
+        <div class="px-5">
+            <nav class="navbar navbar-expand-md navbar-light">
+
+                <div class="navbar-brand text-danger font-weight-bold">Confess</div>
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto py-4 py-md-0">
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>   
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="loginModal" #loginModal>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+                <div class="modal-body">
+                    {{>login}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" #registerModal>
+        <div class="modal-dialog  modal-dialog-scrollable">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+                <div class="modal-body">
+                    {{>register}}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

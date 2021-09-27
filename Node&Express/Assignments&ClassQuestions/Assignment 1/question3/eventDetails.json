@@ -1,0 +1,60 @@
+{
+    "eventDetail": {
+        "eventName": "Hackathon Run",
+        "categories": [
+            "coding sprint",
+            "datathon",
+            "hackathon"
+        ],
+        "type": [
+            "online",
+            "offline"
+        ],
+        "totalregistrations": 6,
+        "idcounter": 6
+    },
+    "registrations": {
+        "1": {
+            "id": "Nitesh-1",
+            "name": "Nitesh Khatri",
+            "category": "hackathon",
+            "course": "BCA",
+            "type": "online"
+        },
+        "2": {
+            "id": "Deepak-2",
+            "name": "Deepak Khatri",
+            "category": "datathon",
+            "course": "BCA",
+            "type": "online"
+        },
+        "3": {
+            "id": "Manmohan-3",
+            "name": "Manmohan singh",
+            "category": "coding sprint",
+            "course": "BCA",
+            "type": "offline"
+        },
+        "4": {
+            "id": "Ramandeep-4",
+            "name": "Ramandeep singh",
+            "category": "datathon",
+            "course": "BCA",
+            "type": "offline"
+        },
+        "5": {
+            "id": "Ajit-5",
+            "name": "Ajit singh",
+            "category": "coding sprint",
+            "course": "BCA",
+            "type": "online"
+        },
+        "6": {
+            "id": "Aman-6",
+            "name": "Aman",
+            "category": "hackathon",
+            "course": "BCA",
+            "type": "online"
+        }
+    }
+}

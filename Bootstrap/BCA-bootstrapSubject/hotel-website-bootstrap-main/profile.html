@@ -1,0 +1,447 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.js"
+    ></script>
+  </head>
+  <style>
+    .breadcrumb-item a {
+      color: tomato;
+      font-weight: bold;
+    }
+    .active a {
+      color: grey;
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&family=Ubuntu&display=swap");
+
+    * {
+      position: relative;
+    }
+
+    .title {
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .div-1::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 74vh;
+      right: 0;
+      top: 80px;
+      box-shadow: 0px 0px 5px grey;
+      border-radius: 10px;
+      background-color: #2ecc71;
+    }
+
+    .avatar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .avatar img {
+      border-radius: 50%;
+      width: 150px;
+      box-shadow: 0px 0px 10px grey;
+    }
+
+    .cont-1 {
+      box-shadow: 0px 0px 2px grey;
+      padding: 5px;
+      margin: auto;
+      margin-top: 15px;
+      width: 230px;
+      height: 200px;
+    }
+
+    .hr {
+      width: 80%;
+      margin: 20px auto 10px;
+    }
+
+    .table {
+      box-shadow: 0px 0px 10px rgba(192, 192, 192, 0.6),
+        0px 0px 50px rgba(192, 192, 192, 0.4);
+      max-height: 1000px;
+    }
+
+    .alert-div {
+      position: absolute;
+      width: 100%;
+      bottom: 40px;
+    }
+
+    .alert {
+      margin: auto;
+    }
+
+    .div-1 {
+      width: 1100px;
+      padding: 0px 20px 50px 20px;
+    }
+    .div-2 {
+      width: 400px;
+      padding: 0px 15px 50px 15px;
+    }
+
+    @media screen and (max-width: 1499px) {
+      .div-1::after {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+      <div class="header-info d-flex">
+        <div
+          class="info-section d-flex justify-content-center align-items-center flex-fill ml-lg-n5"
+        >
+          <p>needhelp@gotrip.com</p>
+
+          <p>666 569 025077</p>
+
+          <p>broklyn street new york</p>
+        </div>
+
+        <div
+          class="social-section d-flex justify-content-end align-items-center flex-fill mr-5"
+        >
+          <div class="si">
+            <a href=""><i class="fab fa-facebook fa-lg text-white mx-3"></i></a>
+          </div>
+
+          <div>
+            <a href=""><i class="fab fa-twitter fa-lg text-white mx-3"></i></a>
+          </div>
+
+          <div>
+            <a href=""><i class="fab fa-youtube fa-lg text-white mx-3"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-bar d-flex align-items-center fixed">
+        <div class="logo d-flex justify-content-center">
+          <img src="images/logo.png" class="" alt="" />
+        </div>
+        <nav class="navbar navbar-expand d-flex justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="packages.html" class="nav-link">Booking</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                Profile
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="profile.html">Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+   
+
+    <div class="parent d-flex justify-content-around flex-wrap">
+      <div class="div-1">
+        <div class="container pt-4">
+            <div class="form-group mt-5">
+                <form action="" class="input-group">
+                    <input type="text" name="" id="search_room" placeholder="Search Your Rooms" class="form-control">
+                    <div class="input-group-append">
+                        <button class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i> &nbsp; Search</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+        <div class="container mt-4 title" style="text-align: center">
+          <h3>Your Bookings</h3>
+        </div>
+
+        <div class="bookings container mt-4 px-3 pt-3">
+          <table class="table table-hover">
+            <colgroup>
+              <col style="width: 16.66666%" />
+              <col style="width: 16.66666%" />
+              <col style="width: 16.66666%" />
+              <col style="width: 16.66666%" />
+              <col style="width: 16.66666%" />
+              <col style="width: 16.66666%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>S no.</th>
+                <th>Room Name</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+                <th>No Of Room</th>
+                <th>Total Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Budget Room</td>
+
+                <td>05-11-2020</td>
+
+                <td>10-11-2020</td>
+                <td>2</td>
+                <td>5,000</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Delux Room</td>
+
+                <td>08-09-2020</td>
+
+                <td>13-09-2020</td>
+                <td>1</td>
+                <td>2,000</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Budget Room</td>
+
+                <td>02-05-2019</td>
+
+                <td>09-05-2019</td>
+                <td>3</td>
+                <td>7,500</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Luxury Room</td>
+
+                <td>23-03-2020</td>
+
+                <td>26-03-2020</td>
+                <td>2</td>
+                <td>10,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="div-2">
+        <div class="container mt-4 title" style="text-align: center">
+          <h3>Your Details</h3>
+        </div>
+        <div class="cont-1">
+          <div class="avatar mt-2" class="rounded">
+            <img src="images/avatar.jpg" alt="" class="img-thumbnail" />
+          </div>
+
+          <div class="container mt-2" style="text-align: center">
+            <h5>
+              <span class="badge badge-danger"> Gokunik </span>
+            </h5>
+          </div>
+        </div>
+
+        <hr class="hr" />
+
+        <div class="px-5">
+          <form class="">
+            <div class="form-group">
+              <label for="pwd">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                value=""
+                placeholder="gokunik"
+                required
+                data-toggle="popover"
+                data-trigger="focus"
+                title="Required Condition"
+                data-content="Must be Alpha Numeric and only contain [' . ' , ' - ' , ' _ '], no other character allowed"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                value=""
+                placeholder="Nitesh Khatri"
+                required
+                data-toggle="popover"
+                data-trigger="focus"
+                title="Required Condition"
+                data-content="Must not include special characters or numbers"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                value=""
+                placeholder="nik@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">phone</label>
+              <input
+                type="number"
+                class="form-control"
+                name="phone"
+                value=""
+                placeholder="8324354657"
+                required
+                data-toggle="popover"
+                data-trigger="focus"
+                title="Required Condition"
+                data-content="Number must be of 10 digit"
+              />
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-info">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <footer style="background-color: #401070">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center text-md-left">
+              <div class="py-0">
+                <h3 class="my-4 text-warning">
+                  Go<span class="mx-1 font-italic text-primary">Trip</span>
+                </h3>
+
+                <p class="footer-links font-weight-bold">
+                  <a class="text-white p-1" href="#">Home</a>
+                  <a class="text-white p-1" href="#">Blog</a>
+                  <a class="text-white p-1" href="#">About</a>
+                  <a class="text-white p-1" href="#">Contact</a>
+                </p>
+                <p class="text-light py-4 mb-4">&copy;2020 go Trip Pvt. Ltd.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-white text-center text-md-left">
+              <div class="py-2 my-4">
+                <div>
+                  <p class="text-white">
+                    <i class="fa fa-map-marker mx-2"></i> Theodore Lowe Ap
+                    #867-859 Sit Rd. Azusa New York 39531
+                  </p>
+                </div>
+
+                <div>
+                  <p class="m-2">
+                    <i class="fa fa-phone mx-2"></i>(793) 151-6230
+                  </p>
+                </div>
+                <div>
+                  <p class="m-2">
+                    <i class="fa fa-envelope mx-2"></i
+                    ><a href="#">support@gotrip.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-white my-4 text-center text-md-left">
+              <span class="font-weight-bold">About the Company</span>
+              <p class="text-warning my-2">
+                We are Go Trip Ravels Support Company Tripo is a World Leading
+                Online Tour Booking Platform
+              </p>
+              <div class="py-2">
+                <a href="#"
+                  ><i class="fab fa-facebook fa-2x text-white mx-3"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter fa-2x text-white mx-3"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-youtube fa-2x text-white mx-3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script >
+    $(document).ready(function() {
+ 
+        var rooms = ['budget Room','delux Room','Expensive Room', 'Luxury Room','05-11-2020','08-09-2020','02-05-2019','23-03-2020'];
+    
+        $('#search_room').typeahead({
+          source: rooms
+        });
+      });
+</script>
+<script>
+    $(document).ready(function () {
+  
+      $('.navigation-bar').affix({
+        offset: {
+          top: $('.header-info').height()
+        }
+      })
+  
+    });
+  </script>

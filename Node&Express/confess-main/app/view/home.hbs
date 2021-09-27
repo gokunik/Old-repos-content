@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerIncludes}}
+</head>
+<body>
+    {{>header}}
+    
+    <div class="container mt-5 text-center">
+        <h4 class="text-info">Express Your <span class="text-warning">Thougths!</span> Feel <span class="text-warning">Light</span></h4>
+        <h6>Its <span class="text-danger">anonymous</span></h6>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                Share your Thougths
+            </div>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-play"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Give your thought a nice title" >
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-info-circle"></i></span>
+                    </div>
+                    <textarea class="form-control" placeholder="Describe Your thought" ></textarea>
+                </div>
+
+                <button class="btn btn-primary">Share</button>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

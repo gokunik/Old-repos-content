@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <link rel="stylesheet" href="https://www.wordpressdon.com/bootstrap/style.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .mar-b{
+            margin-bottom: 10px;
+        }
+
+        .alert
+        {
+            visibility: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="nav-div d-flex align-items-center justify-content-around">
+      <div
+        class="logo d-flex align-items-center justify-content-center mb-3 px-2"
+      >
+        <h2 class="text-danger pl-2">
+          Go <span class="text-dark">Bus</span>
+        </h2>
+      </div>
+      <ul class="nav align-items-center mb-3">
+        <li class="nav-item">
+          <a class="nav-link a" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="about.html">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="blog.html">blog</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            href=""
+            class="nav-link dropdown-toggle a"
+            data-toggle="dropdown"
+          >
+            Join
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="login.html">Login</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="login.html">Register</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container contact mt-5" style="margin-top: 120px !important;">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="contact-title">Get in Touch</h2>
+        </div>
+        <div class="col-lg-8">
+          <form
+            class="form-contact contact_form"
+            action="contact_process.php"
+            method="post"
+            id="contactForm"
+            novalidate="novalidate"
+          >
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea
+                    class="form-control w-100"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="9"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Message'"
+                    placeholder=" Enter Message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input
+                    class="form-control valid"
+                    name="name"
+                    id="name"
+                    type="text"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter your name'"
+                    placeholder="Enter your name"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input
+                    class="form-control valid"
+                    name="email"
+                    id="email"
+                    type="email"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter email address'"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    type="text"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Subject'"
+                    placeholder="Enter Subject"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <button type="button" onclick="show()" class="button button-contactForm boxed-btn">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-3 offset-lg-1">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-home" ></i></span>
+            <div class="media-body" >
+              <h3> Address 
+                <a title="Buttonwood, California." data-toggle="popover" data-trigger="hover" data-placement="right"  data-content="Rosemead, CA 91770"><i class="fa fa-info-circle ml-2 text-primary"  aria-hidden="true"></i></a>
+              </h3>
+              
+              <p></p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <div class="media-body">
+              <h3> Mobile
+                <a title="+1 253 565 2365" data-toggle="popover" data-trigger="hover" data-placement="right"  data-content="Mon to Fri 9am to 6pm"><i class="fa fa-info-circle ml-2 text-primary"  aria-hidden="true"></i></a>
+              </h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email"></i></span>
+            <div class="media-body">
+              <h3> Email
+                <a title="support@gobus.com" data-toggle="popover" data-trigger="click" data-placement="right"  data-content="Send us your query anytime!"><i class="fa fa-info-circle ml-2 text-primary"  aria-hidden="true"></i></a>
+              </h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mar-b">
+        <div  id="alert" class="alert alert-success alert-dismissible w-50">
+            <button type="button"  class="close" onclick="hide()">&times;</button>
+            <strong>Success!</strong> Your response is submitted
+          </div>
+    </div>
+
+    <div class="container">
+        <center>
+            <ul class="breadcrumb justify-content-center w-50">
+                <li class="breadcrumb-item"><a href="bus.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="about.html">About</a></li>
+                <li class="breadcrumb-item active"><a href="contact.html">Contact</a></li>
+                
+              </ul>
+        </center>
+</div>
+
+
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about">
+            <span> About the company</span> Ut congue augue non tellus bibendum,
+            in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus
+            odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer
+            tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo.
+            Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue.
+            Nam ut nibh mollis, tristique ante sed, viverra massa.
+          </p>
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div class="p-2">
+            <i class="fa fa-map-marker"></i>
+            <p><span> broklyn </span>new york, USA</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 1234567891</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> office@gobus.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+          <h2>Go<span> Bus</span></h2>
+          <p class="menu">
+            <a href="#"> Home</a> | <a href="#"> About</a> |
+            <a href="#"> Services</a> | <a href="#"> Portfolio</a> |
+            <a href="#"> News</a> |
+            <a href="#"> Contact</a>
+          </p>
+          <p class="name">Go Bus &copy; 2016</p>
+        </div>
+      </footer>
+  
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
+
+</script>
+
+<script type="text/javascript">
+  function hide()
+  {
+    document.getElementById('alert').style.visibility = 'hidden';
+  }
+  
+  function show()
+  {
+    document.getElementById('alert').style.visibility = 'visible';
+
+    setTimeout(function(){document.getElementById('alert').style.visibility = 'hidden';},5000)
+  }
+  </script>
