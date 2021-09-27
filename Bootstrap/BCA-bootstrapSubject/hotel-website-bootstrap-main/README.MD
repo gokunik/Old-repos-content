@@ -8,13 +8,13 @@
 
 ### Few Screenshots
 <div align="center">
-<img src="screenshots/s1.png"/>
+<img src="screenshots/S1.png"/>
 <hr>
-<img src="screenshots/s2.png"/>
+<img src="screenshots/S2.png"/>
 <hr>
-<img src="screenshots/s3.png"/>
+<img src="screenshots/S3.png"/>
 <hr>
-<img src="screenshots/s4.png"/>
+<img src="screenshots/S4.png"/>
 <hr>
-<img src="screenshots/s5.png"/>
+<img src="screenshots/S5.png"/>
 </div>
